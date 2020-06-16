@@ -1,7 +1,7 @@
 {
   "name": "exel_course",
   "version": "1.0.0",
-  "description": "Exel prac",
+  "description": "Excel prac",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack --mode production"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Sashaasdzxc/exelc-prac.git"
   },
   "keywords": [
-    "exel",
+    "excel",
     "js"
   ],
   "author": "Alexandr Vesyolkin <sashaasdzxc@gmail.com>",
@@ -43,6 +43,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.1"
+    "@babel/polyfill": "^7.10.1",
+    "normalize.css": "^8.0.1"
   }
 }
