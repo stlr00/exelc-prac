@@ -21,6 +21,7 @@ export function matrix($target, $current) {
 }
 
 export function nextSelector(key, {col, row}) {
+  const MIN_VALUE = 0
   switch (key) {
     case 'Enter':
     case 'ArrowDown':
@@ -31,14 +32,10 @@ export function nextSelector(key, {col, row}) {
       col++
       break
     case 'ArrowLeft':
-      if (col !== 0) {
-        col--
-      }
+      col = col - 1 < MIN_VALUE ? MIN_VALUE : col - 1
       break
     case 'ArrowUp':
-      if (row !== 0) {
-        row--
-      }
+      row = row - 1 < MIN_VALUE ? MIN_VALUE : row - 1
       break
   }
 
